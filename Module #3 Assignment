@@ -1,0 +1,7 @@
+A<- c(4,62,51,21,2,14,15)
+B<- c(12,75,43,19,1,21,19)
+data.frame(A,B)
+AB1<- t(data.frame(A,B))
+rownames(AB1)<- c('ABC political poll results','CBS political poll results')
+colnames(AB1)<- c('Jeb','Donald','Ted','Marco','Carly','Hillary','Bernie')
+AB1 #print assignment with properly labeled data frame
