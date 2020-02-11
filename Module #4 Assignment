@@ -35,3 +35,20 @@ groupeddata1.0 <- as.data.frame(groupeddata1.0)
 hist(groupeddata1.0$First, main = "1st Rating from Doctor; 0 = bad, 1 = good",breaks=10)
 hist(groupeddata1.0$Second, main = "2nd Rating from Doctor; 0 = bad, 1 = good",breaks=10)
 hist(groupeddata1.0$FinalDecision,main = "Final Rating from Doctor; 0 = bad, 1 = good", breaks=10)
+
+#Below is the code given by professor ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+>Freq <-c(0.6,0.3,0.4,0.4,0.2,0.6,.3,0.4,0.9,0.2)
+# frequency of hospital visits by patients
+>BP <- c(103,87,32,43,59,109,78,205,135,178)
+# blood pressure of each individual patient
+>First <- c(1,1,1,1,0,0,0,0,NA,1)
+>Second <- c(0,0,1,1,0,0,1,1,1,1)
+>Final <- c(0,1,0,1,0,1,0,1,1,1)
+>hospital.df <-  data.frame(Freq,BP,First,Second,Final)
+>boxplot(Freq,BP,First,Second,Final)
+>boxplot(BP)
+>boxplot(First,Second,Final)
+>hist(BP)
+>hist(First)
+>hist(Second)
+>hist(Final)
