@@ -1,0 +1,15 @@
+S4 class is defined using the setClass() function. In R terminology, member variables are called slots. 
+    While defining a class, we need to set the name and the slots (along with class of the slot) 
+    it is going to have. 
+____________________________________________________________________________________________________________
+
+A <- list(name="Alex",age=24,GPA=3.75,MCAT=510,residency="out") #Create data set for S3 object
+C < -data.frame(A) #Data frame is an S3 class
+otype(C) #Confirm S3 class
+print(C) #Show use of generic function
+
+setClass("student", representation(name='character',age='numeric',GPA='numeric',  #setClass in order to create S4 object
+                                   MCAT='numeric',residency='character'))  
+B<-new("student", name="Alex", age=24, GPA=3.75, MCAT=510,residency="out") #Create S4 object
+otype(B) #Confirm S4 class
+print(B) #Show use of generic function
