@@ -20,3 +20,4 @@ Suggests:
     gap,
     tidyverse,
     tibble
+RoxygenNote: 7.1.0
