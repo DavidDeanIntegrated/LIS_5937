@@ -1,0 +1,22 @@
+Package: politico1
+Type: Package
+Title: Package For Visualizing 2000 Florida Presidential Election Results
+Version: 0.0.9
+Author: "David Dean"
+Maintainer: "David Dean" <daviddean@usf.edu>
+Description: This package uses publicly available data to visualize the results of 
+    the year 2000 Florida presendial election. This package will show which candidate
+    received the most votes from each county in Florida. Additionally, this package will
+    show only the results of the candidates of interest and can show only specific 
+    counties of interest.The publicly available data can be found at:
+    https://vincentarelbundock.github.io/Rdatasets/datasets.html
+License: CCO
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown,
+    ggplot2,
+    gap,
+    tidyverse,
+    tibble
