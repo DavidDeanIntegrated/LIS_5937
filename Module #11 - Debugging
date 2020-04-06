@@ -1,0 +1,14 @@
+tukey_multiple <- function(x) 
+  outliers <- array(TRUE,dim=length(x),dimnames = NULL)
+  y <- nrow(x)
+  z <- ncol(x)
+  
+  for (j in 1:z)
+  {
+    outliers[,j] <- outliers[,j] && tukey.outlier[,j]
+  }
+  
+  for (i in 1:y)
+  { outlier.vec[i] <- all(outliers[i+1,])
+  
+  return(outlier.vec) }
