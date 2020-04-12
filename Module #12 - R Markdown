@@ -1,0 +1,44 @@
+---
+title: "Module #12 R Markdown Assignment"
+author: "David Dean"
+date: "4/12/2020"
+output: html_document
+---
+# Section 1
+#### I am a big fan of the R code block shown below as it allows a point and click interface which removes ambiguity when selecting particular data sets.
+
+``` {r pointclick_interface, eval = FALSE}
+pointclick_interface <- read.table(file.choose(),header=TRUE,sep=",")
+ 
+```
+
+#### There are important aruments to control behavor of R code chunks in MD:
+ - r : specifies language for code chunk
+ - pointclick_interface : name of code chunk, this name needs to be unique
+ - eval : if assigned TRUE the code will be evaluated
+
+
+# Section 2
+#### There are *__pre-loaded__* datasets on R studio. One of these is the *__'cars'__* dataset which includes variables such as speed and distance. See the code block below:
+```{r cars}
+summary(cars)
+plot(cars)
+```
+
+
+#### If you wanted to show a plot without R code you would type *__'echo = FALSE'__* into your code block
+
+
+```{r pressure, echo=FALSE}
+plot(pressure, main = "Pressure vs Temperature Plot")
+```
+
+
+ - This plot was generated using datasets pre-loaded into R studio
+ 
+# Section 3 
+#### I'm running into near constant problems when trying to manipulate datasets surrounding the ongoing coronavirus pandemic
+- I would love to be able to generate a package that manipulated some of this data, but it's not looking good so far.
+
+### This dog photo describes my current feelings about R
+![ ](C:\Users\david\OneDrive\Documents\LIS5937\Assignment12\crazydog.png)
